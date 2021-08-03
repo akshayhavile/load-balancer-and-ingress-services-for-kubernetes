@@ -1328,3 +1328,11 @@ func GetK8sMinSupportedVersion() string {
 func GetK8sMaxSupportedVersion() string {
 	return k8sMaxVersion
 }
+
+func IsVCFCluster() bool {
+	vcfCluster := os.Getenv(VCF_CLUSTER)
+	if vcfCluster == "true" {
+		return true
+	}
+	return false
+}
