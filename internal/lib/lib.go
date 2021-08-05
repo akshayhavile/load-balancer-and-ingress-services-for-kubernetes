@@ -1331,8 +1331,5 @@ func GetK8sMaxSupportedVersion() string {
 
 func IsVCFCluster() bool {
 	vcfCluster := os.Getenv(VCF_CLUSTER)
-	if vcfCluster == "true" {
-		return true
-	}
-	return false
+	return vcfCluster == "true"
 }
