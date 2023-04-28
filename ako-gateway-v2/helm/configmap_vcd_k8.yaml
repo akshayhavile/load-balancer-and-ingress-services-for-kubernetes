@@ -1,0 +1,39 @@
+
+apiVersion: v1
+data:
+  advancedL4: "false"
+  apiServerPort: "8080"
+  autoFQDN: default
+  cloudName: Default-Cloud
+  clusterName: kubernetes
+  cniPlugin: ""
+  controllerIP: 10.102.46.62
+  controllerVersion: 20.1.5
+  defaultDomain: ""
+  defaultIngController: "true"
+  deleteConfig: "false"
+  disableStaticRouteSync: "false"
+  enableEVH: "true"
+  enableRHI: "false"
+  fullSyncFrequency: "1800"
+  l7ShardingScheme: hostname
+  layer7Only: "false"
+  logLevel: DEBUG
+  networkName: DataNetwork
+  nodeNetworkList: '[{"cidrs":["10.10.6.0/24"],"networkName":"DataNetwork"}]'
+  nsSyncLabelKey: app
+  nsSyncLabelValue: migrate
+  passthroughShardSize: SMALL
+  serviceEngineGroupName: Default-Group
+  serviceType: ClusterIP
+  servicesAPI: "false"
+  shardVSSize: LARGE
+  subnetIP: 10.10.6.0
+  subnetPrefix: "24"
+  tenantName: admin
+  tenantsPerCluster: "false"
+  vipNetworkList: '[]'
+kind: ConfigMap
+metadata:
+  name: avi-k8s-config
+  namespace: avi-system

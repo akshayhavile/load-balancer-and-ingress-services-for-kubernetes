@@ -1,0 +1,578 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  annotations:
+    meta.helm.sh/release-name: ako-1650714321
+    meta.helm.sh/release-namespace: default
+  creationTimestamp: "2022-04-23T11:45:22Z"
+  generation: 1
+  labels:
+    app.kubernetes.io/instance: ako-1650714321
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/name: ako
+    app.kubernetes.io/version: latest
+    helm.sh/chart: ako-0.1.0
+  managedFields:
+  - apiVersion: apps/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:meta.helm.sh/release-name: {}
+          f:meta.helm.sh/release-namespace: {}
+        f:labels:
+          .: {}
+          f:app.kubernetes.io/instance: {}
+          f:app.kubernetes.io/managed-by: {}
+          f:app.kubernetes.io/name: {}
+          f:app.kubernetes.io/version: {}
+          f:helm.sh/chart: {}
+      f:spec:
+        f:podManagementPolicy: {}
+        f:replicas: {}
+        f:revisionHistoryLimit: {}
+        f:selector: {}
+        f:serviceName: {}
+        f:template:
+          f:metadata:
+            f:labels:
+              .: {}
+              f:app.kubernetes.io/instance: {}
+              f:app.kubernetes.io/name: {}
+          f:spec:
+            f:containers:
+              k:{"name":"ako"}:
+                .: {}
+                f:env:
+                  .: {}
+                  k:{"name":"AKO_API_PORT"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:configMapKeyRef:
+                        .: {}
+                        f:key: {}
+                        f:name: {}
+                  k:{"name":"AUTO_L4_FQDN"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:configMapKeyRef:
+                        .: {}
+                        f:key: {}
+                        f:name: {}
+                  k:{"name":"BGP_PEER_LABELS"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:configMapKeyRef:
+                        .: {}
+                        f:key: {}
+                        f:name: {}
+                  k:{"name":"CLOUD_NAME"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:configMapKeyRef:
+                        .: {}
+                        f:key: {}
+                        f:name: {}
+                  k:{"name":"CLUSTER_NAME"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:configMapKeyRef:
+                        .: {}
+                        f:key: {}
+                        f:name: {}
+                  k:{"name":"CNI_PLUGIN"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:configMapKeyRef:
+                        .: {}
+                        f:key: {}
+                        f:name: {}
+                  k:{"name":"CTRL_IPADDRESS"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:configMapKeyRef:
+                        .: {}
+                        f:key: {}
+                        f:name: {}
+                  k:{"name":"CTRL_VERSION"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:configMapKeyRef:
+                        .: {}
+                        f:key: {}
+                        f:name: {}
+                  k:{"name":"DEFAULT_DOMAIN"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:configMapKeyRef:
+                        .: {}
+                        f:key: {}
+                        f:name: {}
+                  k:{"name":"DEFAULT_ING_CONTROLLER"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:configMapKeyRef:
+                        .: {}
+                        f:key: {}
+                        f:name: {}
+                  k:{"name":"DISABLE_STATIC_ROUTE_SYNC"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:configMapKeyRef:
+                        .: {}
+                        f:key: {}
+                        f:name: {}
+                  k:{"name":"ENABLE_EVH"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:configMapKeyRef:
+                        .: {}
+                        f:key: {}
+                        f:name: {}
+                  k:{"name":"ENABLE_RHI"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:configMapKeyRef:
+                        .: {}
+                        f:key: {}
+                        f:name: {}
+                  k:{"name":"FULL_SYNC_INTERVAL"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:configMapKeyRef:
+                        .: {}
+                        f:key: {}
+                        f:name: {}
+                  k:{"name":"LOG_FILE_NAME"}:
+                    .: {}
+                    f:name: {}
+                    f:value: {}
+                  k:{"name":"LOG_FILE_PATH"}:
+                    .: {}
+                    f:name: {}
+                    f:value: {}
+                  k:{"name":"MCI_ENABLED"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:configMapKeyRef:
+                        .: {}
+                        f:key: {}
+                        f:name: {}
+                  k:{"name":"NAMESPACE_SYNC_LABEL_KEY"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:configMapKeyRef:
+                        .: {}
+                        f:key: {}
+                        f:name: {}
+                  k:{"name":"NAMESPACE_SYNC_LABEL_VALUE"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:configMapKeyRef:
+                        .: {}
+                        f:key: {}
+                        f:name: {}
+                  k:{"name":"NODE_NETWORK_LIST"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:configMapKeyRef:
+                        .: {}
+                        f:key: {}
+                        f:name: {}
+                  k:{"name":"PASSTHROUGH_SHARD_SIZE"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:configMapKeyRef:
+                        .: {}
+                        f:key: {}
+                        f:name: {}
+                  k:{"name":"POD_NAME"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:fieldRef:
+                        .: {}
+                        f:apiVersion: {}
+                        f:fieldPath: {}
+                  k:{"name":"POD_NAMESPACE"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:fieldRef:
+                        .: {}
+                        f:apiVersion: {}
+                        f:fieldPath: {}
+                  k:{"name":"PRIMARY_AKO_FLAG"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:configMapKeyRef:
+                        .: {}
+                        f:key: {}
+                        f:name: {}
+                  k:{"name":"SEG_NAME"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:configMapKeyRef:
+                        .: {}
+                        f:key: {}
+                        f:name: {}
+                  k:{"name":"SERVICE_TYPE"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:configMapKeyRef:
+                        .: {}
+                        f:key: {}
+                        f:name: {}
+                  k:{"name":"SERVICES_API"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:configMapKeyRef:
+                        .: {}
+                        f:key: {}
+                        f:name: {}
+                  k:{"name":"SHARD_VS_SIZE"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:configMapKeyRef:
+                        .: {}
+                        f:key: {}
+                        f:name: {}
+                  k:{"name":"TENANT_NAME"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:configMapKeyRef:
+                        .: {}
+                        f:key: {}
+                        f:name: {}
+                  k:{"name":"VIP_NETWORK_LIST"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:configMapKeyRef:
+                        .: {}
+                        f:key: {}
+                        f:name: {}
+                  k:{"name":"VIP_PER_NAMESPACE"}:
+                    .: {}
+                    f:name: {}
+                    f:valueFrom:
+                      .: {}
+                      f:configMapKeyRef:
+                        .: {}
+                        f:key: {}
+                        f:name: {}
+                f:image: {}
+                f:imagePullPolicy: {}
+                f:lifecycle:
+                  .: {}
+                  f:preStop:
+                    .: {}
+                    f:exec:
+                      .: {}
+                      f:command: {}
+                f:livenessProbe:
+                  .: {}
+                  f:failureThreshold: {}
+                  f:httpGet:
+                    .: {}
+                    f:path: {}
+                    f:port: {}
+                    f:scheme: {}
+                  f:initialDelaySeconds: {}
+                  f:periodSeconds: {}
+                  f:successThreshold: {}
+                  f:timeoutSeconds: {}
+                f:name: {}
+                f:resources:
+                  .: {}
+                  f:limits:
+                    .: {}
+                    f:cpu: {}
+                    f:memory: {}
+                  f:requests:
+                    .: {}
+                    f:cpu: {}
+                    f:memory: {}
+                f:terminationMessagePath: {}
+                f:terminationMessagePolicy: {}
+            f:dnsPolicy: {}
+            f:restartPolicy: {}
+            f:schedulerName: {}
+            f:securityContext: {}
+            f:serviceAccount: {}
+            f:serviceAccountName: {}
+            f:terminationGracePeriodSeconds: {}
+        f:updateStrategy:
+          f:rollingUpdate:
+            .: {}
+            f:partition: {}
+          f:type: {}
+    manager: helm
+    operation: Update
+    time: "2022-04-23T11:45:22Z"
+  name: ako
+  namespace: default
+  resourceVersion: "39758786"
+  uid: 9aed9363-70fd-4ddd-8c21-87a825c12b8a
+spec:
+  podManagementPolicy: OrderedReady
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app.kubernetes.io/instance: ako-1650714321
+      app.kubernetes.io/name: ako
+  serviceName: ako
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app.kubernetes.io/instance: ako-1650714321
+        app.kubernetes.io/name: ako
+    spec:
+      containers:
+      - env:
+        - name: CTRL_IPADDRESS
+          valueFrom:
+            configMapKeyRef:
+              key: controllerIP
+              name: avi-k8s-config
+        - name: CTRL_VERSION
+          valueFrom:
+            configMapKeyRef:
+              key: controllerVersion
+              name: avi-k8s-config
+        - name: CNI_PLUGIN
+          valueFrom:
+            configMapKeyRef:
+              key: cniPlugin
+              name: avi-k8s-config
+        - name: VIP_PER_NAMESPACE
+          valueFrom:
+            configMapKeyRef:
+              key: vipPerNamespace
+              name: avi-k8s-config
+        - name: SHARD_VS_SIZE
+          valueFrom:
+            configMapKeyRef:
+              key: shardVSSize
+              name: avi-k8s-config
+        - name: PASSTHROUGH_SHARD_SIZE
+          valueFrom:
+            configMapKeyRef:
+              key: passthroughShardSize
+              name: avi-k8s-config
+        - name: FULL_SYNC_INTERVAL
+          valueFrom:
+            configMapKeyRef:
+              key: fullSyncFrequency
+              name: avi-k8s-config
+        - name: PRIMARY_AKO_FLAG
+          valueFrom:
+            configMapKeyRef:
+              key: primaryInstance
+              name: avi-k8s-config
+        - name: CLOUD_NAME
+          valueFrom:
+            configMapKeyRef:
+              key: cloudName
+              name: avi-k8s-config
+        - name: TENANT_NAME
+          valueFrom:
+            configMapKeyRef:
+              key: tenantName
+              name: avi-k8s-config
+        - name: CLUSTER_NAME
+          valueFrom:
+            configMapKeyRef:
+              key: clusterName
+              name: avi-k8s-config
+        - name: ENABLE_RHI
+          valueFrom:
+            configMapKeyRef:
+              key: enableRHI
+              name: avi-k8s-config
+        - name: ENABLE_EVH
+          valueFrom:
+            configMapKeyRef:
+              key: enableEVH
+              name: avi-k8s-config
+        - name: SERVICES_API
+          valueFrom:
+            configMapKeyRef:
+              key: servicesAPI
+              name: avi-k8s-config
+        - name: DEFAULT_DOMAIN
+          valueFrom:
+            configMapKeyRef:
+              key: defaultDomain
+              name: avi-k8s-config
+        - name: DISABLE_STATIC_ROUTE_SYNC
+          valueFrom:
+            configMapKeyRef:
+              key: disableStaticRouteSync
+              name: avi-k8s-config
+        - name: NAMESPACE_SYNC_LABEL_KEY
+          valueFrom:
+            configMapKeyRef:
+              key: nsSyncLabelKey
+              name: avi-k8s-config
+        - name: NAMESPACE_SYNC_LABEL_VALUE
+          valueFrom:
+            configMapKeyRef:
+              key: nsSyncLabelValue
+              name: avi-k8s-config
+        - name: DEFAULT_ING_CONTROLLER
+          valueFrom:
+            configMapKeyRef:
+              key: defaultIngController
+              name: avi-k8s-config
+        - name: SEG_NAME
+          valueFrom:
+            configMapKeyRef:
+              key: serviceEngineGroupName
+              name: avi-k8s-config
+        - name: BGP_PEER_LABELS
+          valueFrom:
+            configMapKeyRef:
+              key: bgpPeerLabels
+              name: avi-k8s-config
+        - name: NODE_NETWORK_LIST
+          valueFrom:
+            configMapKeyRef:
+              key: nodeNetworkList
+              name: avi-k8s-config
+        - name: VIP_NETWORK_LIST
+          valueFrom:
+            configMapKeyRef:
+              key: vipNetworkList
+              name: avi-k8s-config
+        - name: AKO_API_PORT
+          valueFrom:
+            configMapKeyRef:
+              key: apiServerPort
+              name: avi-k8s-config
+        - name: SERVICE_TYPE
+          valueFrom:
+            configMapKeyRef:
+              key: serviceType
+              name: avi-k8s-config
+        - name: AUTO_L4_FQDN
+          valueFrom:
+            configMapKeyRef:
+              key: autoFQDN
+              name: avi-k8s-config
+        - name: LOG_FILE_PATH
+          value: /log
+        - name: LOG_FILE_NAME
+          value: avi.log
+        - name: POD_NAME
+          valueFrom:
+            fieldRef:
+              apiVersion: v1
+              fieldPath: metadata.name
+        - name: POD_NAMESPACE
+          valueFrom:
+            fieldRef:
+              apiVersion: v1
+              fieldPath: metadata.namespace
+        - name: MCI_ENABLED
+          valueFrom:
+            configMapKeyRef:
+              key: enableMCI
+              name: avi-k8s-config
+        image: ako:latest
+        imagePullPolicy: IfNotPresent
+        lifecycle:
+          preStop:
+            exec:
+              command:
+              - /bin/sh
+              - /var/pre_stop_hook.sh
+        livenessProbe:
+          failureThreshold: 3
+          httpGet:
+            path: /api/status
+            port: 8080
+            scheme: HTTP
+          initialDelaySeconds: 5
+          periodSeconds: 10
+          successThreshold: 1
+          timeoutSeconds: 1
+        name: ako
+        resources:
+          limits:
+            cpu: 350m
+            memory: 400Mi
+          requests:
+            cpu: 200m
+            memory: 300Mi
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      serviceAccount: ako-sa
+      serviceAccountName: ako-sa
+      terminationGracePeriodSeconds: 30
+  updateStrategy:
+    rollingUpdate:
+      partition: 0
+    type: RollingUpdate
+status:
+  replicas: 0
